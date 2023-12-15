@@ -28,7 +28,7 @@ public class EventmanagementApplication implements CommandLineRunner {
 	// TODO: Task 1
 	@Override
 	public void run(String... arg) throws FileNotFoundException{
-		String fileName = "/Users/aliciaong/Downloads/vttp_batch4_assessment-main/vttp2023-batch4-ssf-assessment/events.json";
+		String fileName = "vttp2023-batch4-ssf-assessment/events.json";
 		List<Event> events = dbSvc.readFile(fileName);
 		System.out.println("---events.json file has been read---");
 		System.out.println(events);
