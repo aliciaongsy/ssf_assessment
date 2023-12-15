@@ -34,3 +34,5 @@ build/
 
 ### vim ###
 .vim
+
+**.DS_Store
