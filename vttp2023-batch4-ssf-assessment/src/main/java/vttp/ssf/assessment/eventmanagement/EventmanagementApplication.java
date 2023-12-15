@@ -1,5 +1,6 @@
 package vttp.ssf.assessment.eventmanagement;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
 
@@ -29,7 +30,8 @@ public class EventmanagementApplication implements CommandLineRunner {
 	@Override
 	public void run(String... arg) throws FileNotFoundException{
 		String fileName = "vttp2023-batch4-ssf-assessment/events.json";
-		List<Event> events = dbSvc.readFile(fileName);
+		File file = new File("vttp2023-batch4-ssf-assessment/events.json");
+		List<Event> events = dbSvc.readFile(file.getName());
 		System.out.println("---events.json file has been read---");
 		System.out.println(events);
 
